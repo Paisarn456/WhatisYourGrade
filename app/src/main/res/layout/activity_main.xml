@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/classroom"
+    android:padding="24dp"
+    tools:context="com.example.whatisyourgrade.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:background="#00000000"
+        android:text="What’s Your Grade"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.39"
+        android:background="@android:color/background_light"
+        android:elevation="0dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter your name and score"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="10dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_textView"
+            android:layout_alignStart="@+id/name_textView"
+            android:layout_below="@+id/name_textView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/score_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_edit_text"
+            android:layout_alignStart="@+id/name_edit_text"
+            android:layout_below="@+id/name_edit_text"
+            android:layout_marginTop="10dp"
+            android:text="Score"
+            android:layout_alignRight="@+id/name_textView"
+            android:layout_alignEnd="@+id/name_textView" />
+
+        <EditText
+            android:id="@+id/score_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_below="@+id/score_textView"
+            android:layout_alignLeft="@+id/score_textView"
+            android:layout_alignStart="@+id/score_textView"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation= "horizontal">
+
+        <Button
+            android:id="@+id/findgrade_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/exit_button"
+            android:layout_alignBottom="@+id/exit_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="FIND GRADE" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dp"
+            android:text="EXIT" />
+    </LinearLayout>
+
+
+</LinearLayout>
